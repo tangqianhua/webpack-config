@@ -1,0 +1,8 @@
+.hello {
+  color: red;
+  background: url("./image.jpg");
+}
+
+.div:nth-of-type(odd) {
+  background: blue;
+}
