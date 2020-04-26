@@ -4,5 +4,5 @@
 }
 
 .div:nth-of-type(odd) {
-  background: blue;
+  background: red;
 }

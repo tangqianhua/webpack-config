@@ -4,13 +4,14 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production  webpack",
-    "start": "NODE_ENV=development webpack-dev-server",
-    "server": "node server.js"
+    "build": "webpack --config ./build/webpack.prod.js",
+    "start": "webpack-dev-server --config ./build/webpack.dev.js",
+    "dev-build": "webpack --config ./build/webpack.dev.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "sideEffects": [],
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-runtime": "^7.9.0",
@@ -22,15 +23,18 @@
     "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "style-loader": "^1.1.4",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@babel/runtime": "^7.9.2"
+    "@babel/runtime": "^7.9.2",
+    "lodash": "^4.17.15"
   }
 }
