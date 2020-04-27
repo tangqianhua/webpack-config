@@ -11,7 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "sideEffects": [],
+  "sideEffects": [
+    "*.css"
+  ],
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-runtime": "^7.9.0",
